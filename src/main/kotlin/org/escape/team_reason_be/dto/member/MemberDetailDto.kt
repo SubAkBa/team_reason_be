@@ -8,6 +8,6 @@ data class MemberDetailDto(
     val nickname: String
 ) {
     companion object {
-        fun from(member: Member): MemberDetailDto = MemberDetailDto(member.email, member.name, member.nickname)
+        fun from(member: Member): MemberDetailDto = MemberDetailDto(member.email ?: "", member.name ?: "", member.nickname ?: "")
     }
 }

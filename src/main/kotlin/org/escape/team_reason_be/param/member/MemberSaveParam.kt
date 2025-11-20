@@ -8,5 +8,5 @@ data class MemberSaveParam(
     val name: String,
     val nickname: String
 ) {
-    fun toEntity(): Member = Member(email, password, name, nickname)
+    fun toEntity(): Member = Member(null, email, password, name, nickname)
 }
